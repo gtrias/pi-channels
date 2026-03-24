@@ -15,8 +15,8 @@
  *       }
  *     },
  *     "routes": {
- *       "ops": { "adapter": "telegram", "recipient": "-100987654321" },
- *       "cron": { "adapter": "telegram", "recipient": "123456789" }
+ *       "ops": { "adapter": "telegram", "recipient": "<GROUP_CHAT_ID>" },
+ *       "cron": { "adapter": "telegram", "recipient": "<YOUR_CHAT_ID>" }
  *     }
  *   }
  * }

@@ -20,7 +20,7 @@
  *       "telegram": { "type": "telegram", "botToken": "your-telegram-bot-token", "polling": true }
  *     },
  *     "routes": {
- *       "ops": { "adapter": "telegram", "recipient": "-100987654321" }
+ *       "ops": { "adapter": "telegram", "recipient": "<GROUP_CHAT_ID>" }
  *     },
  *     "bridge": {
  *       "enabled": false,

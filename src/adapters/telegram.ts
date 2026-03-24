@@ -20,7 +20,7 @@
  *   "parseMode": "Markdown",
  *   "polling": true,
  *   "pollingTimeout": 30,
- *   "allowedChatIds": ["123456789", "-100987654321"]
+ *   "allowedChatIds": ["<YOUR_CHAT_ID>", "<GROUP_CHAT_ID>"]
  * }
  */
 

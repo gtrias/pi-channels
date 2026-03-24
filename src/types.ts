@@ -112,7 +112,7 @@ export interface BridgeConfig {
 	 * Examples:
 	 *   - `{ "match": "telegram:-100*", "mode": "stateless" }` — group chats stateless
 	 *   - `{ "match": "webhook:*", "mode": "stateless" }` — all webhooks stateless
-	 *   - `{ "match": "telegram:123456789", "mode": "persistent" }` — specific user persistent
+	 *   - `{ "match": "telegram:<CHAT_ID>", "mode": "persistent" }` — specific user persistent
 	 */
 	sessionRules?: Array<{ match: string; mode: "persistent" | "stateless" }>;
 	/**
@@ -161,7 +161,7 @@ export interface ChannelConfig {
 	adapters: Record<string, AdapterConfig>;
 	/**
 	 * Route map: alias -> { adapter, recipient }.
-	 * e.g. "ops" -> { adapter: "telegram", recipient: "-100987654321" }
+	 * e.g. "ops" -> { adapter: "telegram", recipient: "<GROUP_CHAT_ID>" }
 	 * Lets cron jobs and other extensions use friendly names.
 	 */
 	routes?: Record<string, { adapter: string; recipient: string }>;
